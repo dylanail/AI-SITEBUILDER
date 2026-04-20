@@ -33,7 +33,7 @@ function Hero() {
       <div className="hero__grain" />
 
       {/* Top bar */}
-      <header className="nav">
+      <header className={`nav ${scrolled > 40 ? 'is-scrolled' : ''}`}>
         <div className="wrap nav__inner">
           <a href="#" className="mark">
             <svg viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">

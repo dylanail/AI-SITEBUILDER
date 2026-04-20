@@ -74,13 +74,15 @@
   @media (max-width: 900px) { .section-head { grid-template-columns: 1fr; gap: 32px; } }
 
   /* Homepage section references (required by homepage components) */
-  .nav { position: absolute; top:0; left:0; right:0; z-index: 20; padding: 22px 0; }
+  .nav { position: fixed; top:0; left:0; right:0; z-index: 30; padding: 18px 0; transition: background-color .25s ease, backdrop-filter .25s ease, padding .25s ease, border-color .25s ease; border-bottom: 1px solid transparent; }
+  .nav.is-scrolled { background: rgba(15,11,9,0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); padding: 12px 0; border-bottom-color: var(--line); }
   .nav__inner { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 32px; }
-  .mark__name { font-family: var(--font-display); font-weight:700; font-size:16px; letter-spacing: -0.02em; line-height: 1; }
-  .mark__sub { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.6; margin-top: 3px; }
-  .nav__links { display:flex; gap:28px; justify-content:center; }
-  .nav__links a { font-size: 13px; font-weight: 500; opacity: 0.75; }
-  .nav__rating { display:flex; align-items:center; gap:8px; font-size:12px; font-weight:600; background: rgba(255,255,255,0.06); padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); }
+  .mark__name { font-family: var(--font-display); font-weight:700; font-size:19px; letter-spacing: -0.02em; line-height: 1; }
+  .mark__sub { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.75; margin-top: 4px; }
+  .nav__links { display:flex; gap:30px; justify-content:center; }
+  .nav__links a { font-size: 15px; font-weight: 600; opacity: 0.92; letter-spacing: -0.005em; transition: opacity .15s ease, color .15s ease; }
+  .nav__links a:hover { opacity: 1; color: var(--sun); }
+  .nav__rating { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:600; background: rgba(255,255,255,0.08); padding: 9px 15px; border-radius: 999px; border: 1px solid var(--line-strong); }
 
   .hero { position: relative; min-height: 100vh; min-height: 100svh; overflow: hidden; color: var(--sand); isolation: isolate; padding-bottom: 48px; background: var(--ink); }
   .hero__photo { position:absolute; inset:-8%; z-index:-3; }
