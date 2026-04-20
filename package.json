@@ -1,0 +1,10 @@
+{
+  "name": "ai-sitebuilder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Saguaro & Co. multi-page template system — hash-routed React SPA prototype.",
+  "scripts": {
+    "dev": "npx --yes serve -l 5173 .",
+    "start": "npx --yes serve -l 5173 ."
+  }
+}
