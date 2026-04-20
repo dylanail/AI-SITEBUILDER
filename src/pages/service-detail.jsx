@@ -16,13 +16,6 @@ function ServiceDetailPage({ slug }) {
 
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:`/services/${svc.slug}`,
-        title:`${svc.name} in Phoenix — ${SITE.name}`,
-        description:`${svc.blurb} Serving Paradise Valley, Scottsdale, Arcadia & the Phoenix metro.`,
-        schemas:["LocalBusiness","Service","BreadcrumbList","FAQPage","Review×N"]
-      }}/>
-
       {/* HERO */}
       <section className="svc-hero">
         <div className="wrap">

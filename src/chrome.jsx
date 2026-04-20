@@ -93,23 +93,6 @@ function Breadcrumbs({ trail }) {
   );
 }
 
-// ======== SEO / JSON-LD head (visible preview card) ========
-function SeoCard({ meta }) {
-  return (
-    <aside className="seo-card" aria-label="SEO preview (template)">
-      <div className="seo-card__head">
-        <span className="seo-card__tag">SEO</span>
-        <span className="seo-card__path">{meta.canonical}</span>
-      </div>
-      <div className="seo-card__title">{meta.title}</div>
-      <div className="seo-card__desc">{meta.description}</div>
-      <div className="seo-card__schemas">
-        {meta.schemas.map(s => <span key={s} className="seo-card__schema">JSON-LD: {s}</span>)}
-      </div>
-    </aside>
-  );
-}
-
 // ======== Footer (reused) ========
 function SiteFooter() {
   return (
@@ -260,6 +243,5 @@ window.Link = Link;
 window.SiteNav = SiteNav;
 window.SiteFooter = SiteFooter;
 window.Breadcrumbs = Breadcrumbs;
-window.SeoCard = SeoCard;
 window.CtaStripShared = CtaStripShared;
 window.PageHeader = PageHeader;

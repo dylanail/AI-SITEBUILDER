@@ -40,12 +40,6 @@ function ContactPage() {
 
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:"/contact",
-        title:`Contact ${SITE.name} — Free Phoenix Painting Estimate`,
-        description:`Request a free estimate. Call ${SITE.phone.display} or fill out the form — we reply within one business day.`,
-        schemas:["LocalBusiness","ContactPage","FAQPage","BreadcrumbList"]
-      }}/>
       <PageHeader eyebrow="◇ Get in touch" title={<>Free estimate,<br/><span className="serif-it">zero pressure.</span></>} subtitle="Call for fastest response, or tell us about your project below."/>
 
       <section className="contact">

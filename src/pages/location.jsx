@@ -19,13 +19,6 @@ function LocationPage({ serviceSlug = "interior-painting", locSlug = "arcadia" }
 
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:`/services/${svc.slug}/${loc.slug}`,
-        title:`${svc.name} in ${loc.name}, AZ — ${SITE.name}`,
-        description:`Premium ${svc.name.toLowerCase()} in ${loc.name}. 10-year warranty, HOA-ready, ${loc.drive} from our shop.`,
-        schemas:["LocalBusiness","Service","Place","BreadcrumbList","FAQPage","Review×N"]
-      }}/>
-
       <section className="loc-hero">
         <div className="wrap">
           <div className="loc-hero__grid">

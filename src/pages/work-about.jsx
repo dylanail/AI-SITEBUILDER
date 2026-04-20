@@ -13,12 +13,6 @@ function WorkPage() {
 
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:"/work",
-        title:`Our Work — ${SITE.name} Phoenix Painting Portfolio`,
-        description:"Before/after galleries of every exterior, interior, and cabinet painting project we've completed across the Phoenix metro.",
-        schemas:["LocalBusiness","BreadcrumbList","ItemList (CreativeWork×N)"]
-      }}/>
       <PageHeader eyebrow="◇ Portfolio" title={<>Work we're <span className="serif-it">proud of.</span></>} subtitle={`${PROJECTS.length}+ projects across the Valley. Filter by service or neighborhood.`}/>
 
       <section className="work-filters">
@@ -150,12 +144,6 @@ window.WorkPage = WorkPage;
 function AboutPage() {
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:"/about",
-        title:`About ${SITE.name} — Phoenix Exterior Painters Since 2009`,
-        description:"Family-owned, locally-run. Meet the crew behind 2,400+ painted homes across Paradise Valley, Scottsdale, Arcadia, and greater Phoenix.",
-        schemas:["LocalBusiness","Organization","BreadcrumbList","Person×N"]
-      }}/>
       <PageHeader eyebrow="◇ About us" title={<>We're the<br/>crew <span className="serif-it">painting Phoenix.</span></>} subtitle="Family-run since 2009. Still family-run. Still painting every job like it's our own house."/>
 
       <section className="about-story">

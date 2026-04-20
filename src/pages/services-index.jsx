@@ -2,12 +2,6 @@
 function ServicesIndexPage() {
   return (
     <main id="content">
-      <SeoCard meta={{
-        canonical:"/services",
-        title:`All Painting Services — ${SITE.name} Phoenix`,
-        description:"Interior, exterior, cabinet refinishing, stucco repair, HOA consulting, and commercial painting across the Phoenix metro.",
-        schemas:["LocalBusiness","BreadcrumbList","ItemList (Service×N)"]
-      }}/>
       <PageHeader
         eyebrow="◇ Our services"
         title={<>Eight ways we<br/>paint <span className="serif-it">Phoenix.</span></>}

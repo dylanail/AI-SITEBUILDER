@@ -11,7 +11,6 @@ function BlogIndexPage() {
 
   return (
     <main id="content">
-      <SeoCard meta={{canonical:"/blog",title:`The Journal — ${SITE.name}`,description:"Color trends, paint science, HOA guides, and Phoenix-specific maintenance tips from our crew.",schemas:["LocalBusiness","Blog","BreadcrumbList"]}}/>
       <PageHeader eyebrow="◇ The journal" title={<>Paint, desert,<br/><span className="serif-it">and the science between.</span></>} subtitle="Field notes from 16 years painting Phoenix homes."/>
 
       {featured && cat === "All" && q === "" && (
@@ -110,7 +109,6 @@ function BlogPostPage({ slug }) {
 
   return (
     <main id="content">
-      <SeoCard meta={{canonical:`/blog/${post.slug}`,title:`${post.title} — ${SITE.name}`,description:post.excerpt,schemas:["Article","LocalBusiness","BreadcrumbList","FAQPage"]}}/>
       <div className="reading-bar" style={{width:`${progress}%`}}/>
 
       <article className="post" id="article-body">
